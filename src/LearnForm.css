@@ -5,12 +5,14 @@
     align-items: center;
     font-size: 1rem;
     color: black;
+    height: 550px;
+    width : 350px;
   }
 
   .LearnForm-main h1{
     margin-left: 70px;
-    margin-bottom : 10px;
-    margin-top:10px;
+    margin-bottom : 5px;
+    margin-top : 5px;
   }
 
   .forminput button{
@@ -23,7 +25,9 @@
     font-family: 'Karla', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 50%;
   }
 
   .forminput  button:hover {
@@ -35,17 +39,31 @@
     border-radius: 20px;
     padding : 5px;
     width: 70%;
+    font-size: 1rem;
   }
 
   .forminput{
     display: flex;
     flex-direction: column;
   }
-  #textarealbl,#passwordlbl{
-    margin-top: 5px;
+  #textarealbl,#passwordlbl,#selectlbl{
+    margin-top: 10px;
   }
 
   fieldset{
     display:flex;
-    margin-top:5px;
+    margin-top:10px;
+    border-radius: 25px;
+  }
+
+  select{
+    width: 70%;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 5px;
+  }
+
+  textarea{
+    border-radius: 15px;
+    padding: 5px;
   }

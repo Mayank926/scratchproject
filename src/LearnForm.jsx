@@ -2,10 +2,12 @@ import './LearnForm.css'
 
 const Form = () => {
     function handleSubmit(formData){
-        alert("User "+formData.get("email")+" provided password "
-        +formData.get("password")+" employment satus "+formData.get('employmentstatus')
-    +" dietryrestrictions "+formData.getAll('dietryrestrictions'));
-        
+
+        const formDataObject = Object.fromEntries(formData);
+        alert('form data obtained is '+JSON.stringify(formDataObject))
+        const checkboxData = formData.getAll('dietryrestrictions')
+        formDataObject['dietryrestrictions']=checkboxData
+        alert('updated form data obtained is '+JSON.stringify(formDataObject))
         //alert(formData.get("employmentstatus"))
     }
 
@@ -54,6 +56,15 @@ const Form = () => {
                             Kosher
                         </label>
                     </fieldset>
+
+                    <label id='selectlbl' htmlFor='color'>Favourite Color</label>
+                    <select name="color" defaultValue="">
+                        <option value="" disabled>-- Choose a color--</option>
+                        <option value='red'>Red</option>
+                        <option value='green'>Green</option>
+                        <option value='yellow'>Yellow</option>
+                        <option value='blue'>Blue</option>
+                    </select>
 
                     <button>Submit</button>
                 </form>
