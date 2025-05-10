@@ -1,7 +1,13 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import LotsofEmojis from './LotsofEmojis.jsx'
+import Counter from './Counter.jsx'
+import LearnForm from './LearnForm.jsx'
 
 createRoot(document.getElementById('root')).render(
-    <App />
+    <div className="container-body">
+        <LotsofEmojis />
+        <Counter/>
+        <LearnForm/>
+    </div>
 )

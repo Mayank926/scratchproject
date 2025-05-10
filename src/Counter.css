@@ -1,0 +1,56 @@
+.Counter-main{
+    background-color: rgb(100, 18, 177);
+    padding: "20px";
+    display: flex;
+    justify-content: space-around;
+}
+
+.Counter-main h1{
+    margin-left: 30px;
+}
+.counter-content{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+}
+
+.counter-content button{
+    padding:0;
+    border-color: rgb(223, 44, 44);
+    color: crimson;
+}
+
+.displayBtn{
+    border-radius: 50%;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.minusBtn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(27, 204, 80);;
+    margin-right: -20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.plusBtn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(27, 204, 80);;
+    position: relative;
+    z-index: 2;
+    margin-left: -20px;
+    margin-top: 60px;
+}

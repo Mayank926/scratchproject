@@ -1,0 +1,41 @@
+.LotsOfEmojis-main {
+  background-color: rgb(250, 247, 46);
+}
+
+.LotsOfEmojis-main:hover{
+  overflow-y: auto;
+}
+
+.LotsOfEmojis-main button {
+  margin-top:10px;
+  background-color: transparent;
+  padding: 1rem;
+  color: rgb(23, 186, 80);
+  border: 2px solid rgb(23, 186, 80);
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.LotsOfEmojis-main button:hover {
+  background-color: #FFFEF1;
+  color: #2C5E2E;
+}
+
+button:focus {
+  outline: 0;
+}
+
+p {
+  margin-block: 10px;
+  font-size: 2rem;
+}
+
+.emojisdisplay{
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
