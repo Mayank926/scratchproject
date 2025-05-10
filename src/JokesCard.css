@@ -1,0 +1,13 @@
+  .Jokes-main {
+    background-color: rgb(231, 229, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    width : 550px;
+    height: 580px;
+  }
+
+  .Jokes-main:hover{
+    overflow-y: auto;
+  }
